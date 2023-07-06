@@ -117,10 +117,9 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView rvGallery =
                 findViewById(R.id.rvGallery);
         rvGallery.setAdapter(mainAdapter);
-        float w =
-                getResources().getDimension(R.dimen.itemWidth);
-        int numberOfColumns =
-                Utils.calculateNoOfColumns(MainActivity.this, w);
+        float w = getResources().getDimension(R.dimen.itemWidth);
+            getResources().getDimension(R.dimen.itemWidth);
+        int numberOfColumns = Utils.calculateNoOfColumns(MainActivity.this, w);
         GridLayoutManager gridLayoutManager = new
                 GridLayoutManager(MainActivity.this, numberOfColumns);
         rvGallery.setLayoutManager(gridLayoutManager);
