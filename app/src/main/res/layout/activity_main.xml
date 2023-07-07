@@ -10,7 +10,6 @@
         android:id="@+id/tbMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:background="@color/design_default_color_primary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -22,9 +21,9 @@
         android:id="@+id/rvGallery"
         android:layout_width="409dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="40dp"
         android:background="@color/design_default_color_primary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbMain"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbMain" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,20 +18,19 @@ public class MainAdapter extends RecyclerView.Adapter {
     public MainAdapter(MainActivity mainActivity, List<String> photos) {
         this.mainActivity = mainActivity;
         this.photos = photos;
-
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_layout, parent, false);
+                .inflate(R.layout.list_item, parent, false);
         ViewHolder viewHolder = new ViewHolder(itemView);
         return viewHolder;
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return photos.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
